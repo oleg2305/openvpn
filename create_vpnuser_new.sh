@@ -13,7 +13,7 @@ cat << EOF
   -help      Show this message
   -u         user login name
 
-  Example: $0 -u v.piskin
+  Example: $0 -u v.userov
 
 
 EOF
@@ -78,7 +78,7 @@ source ./vars
 	touch /etc/openvpn/admin/conf/$USER.ovpn
 	echo "client
 dev tun
-remote 46.173.213.75 21999 udp
+remote 46.119.222.75 21200 udp
 resolv-retry infinite
 nobind
 comp-lzo
@@ -87,7 +87,7 @@ persist-tun
 tls-client
 tls-timeout 12
 #auth SHA1
-cipher AES-128-CBC
+cipher AES-254-CBC
 mute 20
 remote-cert-tls server
 key-direction 1
