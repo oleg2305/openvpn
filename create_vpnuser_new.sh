@@ -78,7 +78,7 @@ source ./vars
 	touch /etc/openvpn/admin/conf/$USER.ovpn
 	echo "client
 dev tun
-remote 46.119.222.75 21200 udp
+remote 46.119.222.75 21100 udp
 resolv-retry infinite
 nobind
 comp-lzo
@@ -87,7 +87,7 @@ persist-tun
 tls-client
 tls-timeout 12
 #auth SHA1
-cipher AES-254-CBC
+cipher AES-256-CBC
 mute 20
 remote-cert-tls server
 key-direction 1

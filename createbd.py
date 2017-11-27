@@ -34,7 +34,7 @@ c.execute("CREATE TABLE net ('id' INTEGER PRIMARY KEY AUTOINCREMENT ,\
           'b' TEXT,\
           'dostup' TEXT)")
 d = 1
-for x in ipcalc.Network('192.168.193.0/24'):
+for x in ipcalc.Network('192.168.100.0/24'):
     if d == 1:
         print("d == 1 ", str(x))
         c.execute("insert into net (a) values ('%s')" % str(x))
